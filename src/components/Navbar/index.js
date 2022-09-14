@@ -25,13 +25,13 @@ const Navbar = ({toggle , Changed , theme}) => {
                         <NavLinks to='about' Changed={Changed}> About</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='discover' Changed={Changed}>Discover</NavLinks>
+                        <NavLinks to='advantages' Changed={Changed}>Advantages</NavLinks>
+                    </NavItem>       
+                    <NavItem>
+                        <NavLinks to='signup' Changed={Changed}>Sign Up</NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to='services' Changed={Changed}>Services</NavLinks>
-                    </NavItem>
-                    <NavItem>
-                        <NavLinks to='signup' Changed={Changed}>Contact</NavLinks>
+                        <NavLinks to='contact' Changed={Changed}>Contact</NavLinks>
                     </NavItem>
                 </NavMenu>             
                 <NavBtn>

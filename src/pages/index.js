@@ -15,12 +15,13 @@ const Home = () => {
     const theme = () => {
       setChanged(!Changed)
     };
+
     
   return (
     <>
     <Sidebar isOpen={isOpen} toggle={toggle} Changed={Changed} />
     <Navbar toggle={toggle} Changed={Changed} theme={theme}/>   
-    <HeroSection/>
+    <HeroSection Changed={Changed}/>
     </>
   );
 };

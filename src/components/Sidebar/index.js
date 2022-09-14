@@ -18,12 +18,12 @@ const Sidebar = ({isOpen, toggle , Changed}) => {
             </SidebarLink>
             <SidebarLink to="discover" Changed={Changed}>
               Discover
-            </SidebarLink>
-            <SidebarLink to="services" Changed={Changed}>
-              Services
-            </SidebarLink>
+            </SidebarLink>   
             <SidebarLink to="signup" Changed={Changed}>
               Sign Up
+            </SidebarLink>
+            <SidebarLink to="contact" Changed={Changed}>
+              Contact
             </SidebarLink>
           </SidebarMenu>
           <SideBtnWrap>

@@ -48,7 +48,7 @@ color: white;
 cursor: pointer;
 
 &:hover{
-    color: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
+    color: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
     transition: 0.2s ease-in-out;
 }
 
@@ -61,7 +61,7 @@ justify-content: center;
 
 export const SidebarRoute = styled(LinkR)`
 border-radius: 50px;
-background: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
+background: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
 white-space: nowrap;
 padding: 16px 64px;
 color: black;
@@ -73,7 +73,7 @@ transition: all 0.2s ease-in-out;
 text-decoration: none;
 
 &:hover{
-    background:${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
+    background:${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
     color:  black;
 }
 

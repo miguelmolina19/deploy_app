@@ -17,11 +17,17 @@ z-index: 10;
 
 @media screen and (max-width : 960px){
     transition: 0.8s all ease;
+    gap : 30px;
 }
+
 `;
 
 export const IconContainer = styled.div`
-margin-left: 150px;
+margin-left: 125px;
+
+@media screen and (max-width : 780px){
+    margin-left: 0px;
+}
 `
 
 export const NavLogo = styled(LinkR)`
@@ -33,11 +39,16 @@ gap: 5px;
 align-items: center;
 font-weight: bold;
 text-decoration: none;
-color: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
+color: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
 transition: all 0.7s ease-in-out;
 
 @media screen and (max-width: 768px){
     margin-left: 50px;
+    
+}
+@media screen and (min-width : 960px){
+    margin-left: 0px;
+ 
 }
 `;
 
@@ -60,7 +71,7 @@ export const NavMenu = styled.ul`
 display: flex;
 align-items: center;
 gap : 40px;
-
+margin-left: 50px;
 @media screen and (max-width: 768px){
     display: none;
 }
@@ -77,9 +88,10 @@ display: flex;
 align-items: center;
 height: 100%;
 cursor: pointer;
+text-decoration :none;
 
 &:hover{
-    color: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
+    color: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
 }
 
 `;
@@ -105,18 +117,17 @@ cursor: pointer;
 transition: all 0.7s ease-in-out;
 text-decoration: none;
 margin-right: 15px;
-background: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
+background: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
 `
 
 export const ReactIcon = styled.div`
 
 display: flex;
-
 align-items: center;
 font-size: 1.8rem;
 cursor: pointer;
 color: #61dafb;
-color: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
+color: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
 transition: all 0.7s ease-in-out;
 @media screen and (max-width: 768px){
     margin-left: 0px;
@@ -129,6 +140,6 @@ margin-right: 100px;
 font-size : 2rem;
 cursor: pointer;    
 margin-top: 8px;
-color: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
+color: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
 transition: all 0.7s ease-in-out;
 `
