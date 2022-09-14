@@ -24,7 +24,7 @@ const HeroSection = ({Changed}) => {
           Sign Up to lear more about react.js
           </HeroP>
           <HeroBtnWrapper>
-            <Button to="/signin" onMouseEnter={onHover} onMouseLeaver={onHover} >
+            <Button to="/signin" Changed ={Changed} onMouseEnter={onHover} onMouseLeaver={onHover} >
               Get Started
             </Button>
           </HeroBtnWrapper>

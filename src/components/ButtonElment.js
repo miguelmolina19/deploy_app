@@ -19,7 +19,7 @@ transition: all 0.2s ease-in-out;
 &:hover {
     transition: all 0.2s ease-in-out;
     color: black;
-    background: rgb(255, 90, 45);
+    background: ${({ Changed }) => ( Changed ? '#61dafb' : 'rgb(255, 90, 45)')};
 
 }
 
