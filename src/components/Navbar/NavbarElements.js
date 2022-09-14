@@ -14,20 +14,15 @@ position: sticky;
 top: 0;
 z-index: 10;
 
+
 @media screen and (max-width : 960px){
     transition: 0.8s all ease;
 }
 `;
-export const NavbarContainer = styled.div`
-display: flex;
-justify-content: space-between;
-height: 80px;
-z-index: 1;
-widht: 100%;
-padding: 0 24px;
-max-width: 1100px;
 
-`;
+export const IconContainer = styled.div`
+margin-left: 150px;
+`
 
 export const NavLogo = styled(LinkR)`
 color: #61dafb;
@@ -36,7 +31,6 @@ font-size: 1.5rem;
 display: flex;
 gap: 5px;
 align-items: center;
-margin-left: 0px;
 font-weight: bold;
 text-decoration: none;
 color: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
@@ -81,8 +75,6 @@ export const NavLinks = styled(LinkS)`
 color: white;
 display: flex;
 align-items: center;
-text-decoration: none;
-
 height: 100%;
 cursor: pointer;
 
@@ -119,7 +111,7 @@ background: ${({ Changed }) => ( Changed ? 'rgb(255, 90, 45)' : '#61dafb')};
 export const ReactIcon = styled.div`
 
 display: flex;
-margin-left: 150px;
+
 align-items: center;
 font-size: 1.8rem;
 cursor: pointer;

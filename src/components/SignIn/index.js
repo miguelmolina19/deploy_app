@@ -1,13 +1,19 @@
 import React from 'react'
-import { FormLabel } from 'react-bootstrap'
 import{ FaReact } from 'react-icons/fa'
-import { InputContainer, Icon, FormWrap, Text, FormButton, FormInput, FormH1, Form, FormContent, ReactIcon} from './SignInElements'
+import { InputContainer, Icon, FormWrap, Text, FormButton, FormInput, FormH1, Form, FormContent, ReactIcon, FormLabel,GridLeft} from './SignInElements'
 const index = () => {
   return (
     <>
     <InputContainer>
       <FormWrap>
-        <Icon to="/"><ReactIcon ><FaReact/></ReactIcon>React.js</Icon>
+        <GridLeft>
+        <Icon to="/" >
+          <ReactIcon><FaReact/>
+          </ReactIcon>
+          React.js
+        </Icon>
+        </GridLeft>
+        
         <FormContent>
           <Form action= "#">
             <FormH1>Sign in to your account</FormH1>

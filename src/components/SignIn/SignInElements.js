@@ -4,12 +4,11 @@ import {Link as LinkR} from 'react-router-dom'
 
 
 export const  InputContainer = styled.div`
-min-height: 692px;
 position: fixed;
-bottom:0;
-left:0;
-right: 0;
-top: 0;
+bottom:0px;
+left:0px;
+right: 0px;
+top: 0px;
 z-index: 0;
 overflow: hidden;
 background: linear-gradient(
@@ -21,38 +20,41 @@ background: linear-gradient(
 
 export const FormWrap = styled.div`
 height: 100%;
-display: flex;
-flex-direction: column;
-justify.content: center;
+display: grid;
+grid-template-columns: 2.5fr 2.5fr;
 
 @media screen and (max-width: 480px){
     padding: 80px;
 }
 `
+export const GridLeft = styled.div`
+position: relative;
+top: 40%;
+width: 100%;
+left : 40%;
+`
+
 export const Icon = styled(LinkR)`
-margin-left : 0px;
-margin-top : 32px;
+position: fixed;
 display : flex;
 gap: 5px;
 text-decoration : none;
-color: Black;
+color: black;
 font-weight: bold;
-font-size: 1.5rem;
-align-items: center;
+font-size: 3rem;
+
+@media screen and (max-width: 740px){
+display: none;
+}
 
 `
 export const ReactIcon = styled.div`
 
-display: flex;
-margin-left: 150px;
+
 align-items: center;
-font-size: 1.8rem;
+font-size: 3rem;
 cursor: pointer;
 color: black;
-@media screen and (max-width: 480px){
-    margin-left :0px;
-    margin-top :8px;
-}
 
 `
 export const FormContent = styled.div`
@@ -64,6 +66,11 @@ justify-content: center;
 @media screen and (max-width: 480px){
     padding:10px
 }
+`
+export const FormLabel = styled.label`
+margin-bottom: 8px;
+font-size: 14px;
+color: white;
 `
 
 
@@ -77,7 +84,7 @@ display: grid;
 margin: 0 auto;
 padding: 80px 32px;
 border-radius: 4px;
-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+box-shadow: 0 25px 58px rgba(0, 0, 0, 0.9);
 
 @media screen and (max-width: 480px){
     padding: 32px 32px;
@@ -94,7 +101,7 @@ text-align: center;
 `
 
 export const FormInput = styled.input`
-padding: 16px 16px;
+padding: 16px ;
 margin-bottom: 32px;
 border: none;
 border-radius: 4px;
